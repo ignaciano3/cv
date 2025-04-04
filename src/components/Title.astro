@@ -1,0 +1,17 @@
+---
+import LinkIcon from '../assets/svg/link.svg';
+
+interface Props {
+  id: string;
+}
+const { id } = Astro.props;
+---
+
+<h2
+  class="text-2xl font-bold mb-4 uppercase tracking-tight text-gray-900 dark:text-white hover:underline underline-offset-6 group"
+  id={id}
+  role="heading"
+>
+  <slot />
+  <LinkIcon class="hidden ml-2 group-hover:inline-block " />
+</h2>

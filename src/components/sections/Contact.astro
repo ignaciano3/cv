@@ -1,0 +1,28 @@
+---
+import Title from "../Title.astro";
+---
+
+<section class="my-10">
+  <Title id="contact">Contact Me</Title>
+  <p class="text-lg mb-4">
+    If you would like to get in touch, feel free to reach out via email or
+    connect with me on LinkedIn.
+  </p>
+  <label>
+    Your Email
+    <input
+      type="email"
+      class="w-full p-4 border border-gray-300 rounded-lg mb-4"
+      placeholder="johndoe@gmail.com"
+    />
+  </label>
+  <label>
+    Your Message
+    <textarea
+      class="w-full h-32 p-4 border border-gray-300 rounded-lg mb-4"
+      placeholder="Your message here..."></textarea>
+  </label>
+  <button class="bg-white text-black font-semibold px-3 py-2 rounded-lg">
+    Send Message
+  </button>
+</section>

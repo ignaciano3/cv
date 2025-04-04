@@ -1,0 +1,31 @@
+---
+import GitHub from "../../assets/svg/github.svg";
+import Instagram from "../../assets/svg/instagram.svg";
+import Linkedin from "../../assets/svg/linkedin.svg";
+import FaceBook from "../../assets/svg/facebook.svg";
+import Ignacio from "../../assets/images/ignacio.jpg";
+import { Image } from "astro:assets";
+---
+
+<section class="my-10">
+  <div class="flex justify-between">
+    <div>
+      <h1 class="text-5xl font-bold mb-8 text-shadow-xs text-shadow-amber-200">
+        Ignacio García Pizales
+      </h1>
+      <h2 class="text-2xl font-bold mb-2">Semi-Senior Full Stack Developer</h2>
+      <h3 class="text-xl">3+ years of experience</h3>
+      <div class="mt-6 flex gap-6">
+        <Linkedin fill="white" class="size-8" />
+        <FaceBook fill="white" class="size-8" />
+        <GitHub fill="white" class="size-8" />
+        <Instagram fill="white" class="size-8" />
+      </div>
+    </div>
+    <Image
+      src={Ignacio}
+      alt="Ignacio García Pizales"
+      class="w-48 h-60 skew-4 sm:block hidden"
+    />
+  </div>
+</section>
